@@ -4,13 +4,14 @@ If you have a Windows File System, SQL or Consistency Group app you want to perf
 
 1)  Actifio Connector must be installed on the host
 2)  App must be discovered
-3)  The bat file in this repo must be renamed to match the APPID, so if the appid is 1566877, then the bat file should be named appid.1566877.bat   You can use the CLI command reportapps to display App IDs.
+3)  The bat file in this repo must be renamed to match the APPID, so if the appid is 1566877, then the bat file should be named appid.1566877.bat   
+You can use the CLI command reportapps to display App IDs.
 4)  The renamed bat file should be in c:\Program Files\Actifio\Scripts
 
 Effectively the order of events will be:
 
 1)  Actifio requests the Connector to run the init tasks
-2)  ctifio requests the Connector to run the freeze tasks
+2)  Actifio requests the Connector to run the freeze tasks
 3)  Actifio requests the Connector to run the thaw tasks
 4)  Actifio requests the Connector to run the fini tasks
 
@@ -46,8 +47,10 @@ c:\Program Files\Actifio\Scripts
 Open a command prompt using 'Run as Administrator' and run these two commands:
 ```
 cd c:\Program Files\Actifio\Scripts
+appid.1566877.bat init
 appid.1566877.bat freeze
 appid.1566877.bat thaw
+appid.1566877.bat fini
 ```
 
 ### Event logging
