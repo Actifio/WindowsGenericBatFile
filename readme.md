@@ -28,7 +28,7 @@ You can use the Appliance CLI command reportapps to display App IDs.
 
 # Installing the Script
 
-Once the script is customized and named corrctly place it in the following location:
+Once the script is customized and named correctly place it in the following location:
 ```
 c:\Program Files\Actifio\Scripts
 ```
