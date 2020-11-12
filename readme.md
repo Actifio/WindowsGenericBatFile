@@ -5,15 +5,15 @@ If you have a Windows File System, SQL or Consistency Group app you want to perf
 1)  Actifio Connector must be installed on the host
 2)  App must be discovered
 3)  The bat file in this repo must be renamed to match the Appliance Application ID, so if the appid is 1566877, then the bat file should be named appid.1566877.bat   
-You can use the Appliance CLI command reportapps to display App IDs.
-4)  The renamed bat file should be in c:\Program Files\Actifio\Scripts
+You can use the Appliance CLI command **reportapps** to display App IDs.
+4)  The renamed bat file should be in C:\Program Files\Actifio\Scripts
 
 Effectively the order of events will be:
 
-1)  Actifio Appliance requests the Appliance Connector to run the init tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
-2)  Actifio Appliance requests the Appliance Connector to run the freeze tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
-3)  Actifio Appliance requests the Appliance Connector to run the thaw tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
-4)  Actifio Appliance requests the Appliance Connector to run the fini tasks in in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
+1)  Actifio Appliance requests the Appliance Connector to run the init tasks in C:\Program Files\Actifio\Scripts\appid.xxxx.bat
+2)  Actifio Appliance requests the Appliance Connector to run the freeze tasks in C:\Program Files\Actifio\Scripts\appid.xxxx.bat
+3)  Actifio Appliance requests the Appliance Connector to run the thaw tasks in C:\Program Files\Actifio\Scripts\appid.xxxx.bat
+4)  Actifio Appliance requests the Appliance Connector to run the fini tasks in C:\Program Files\Actifio\Scripts\appid.xxxx.bat
 
 
 # Error handling
@@ -35,7 +35,7 @@ c:\Program Files\Actifio\Scripts
 
 # Testing the Scripts
 
-Open a command prompt using 'Run as Administrator' and run these two commands:
+Open a command prompt using 'Run as Administrator' and run these commands to see the result of each phase:
 ```
 cd c:\Program Files\Actifio\Scripts
 appid.1566877.bat init
