@@ -4,8 +4,8 @@ If you have a Windows File System, SQL or Consistency Group app you want to perf
 
 1)  Actifio Connector must be installed on the host
 2)  App must be discovered
-3)  The bat file in this repo must be renamed to match the APPID, so if the appid is 1566877, then the bat file should be named appid.1566877.bat   
-You can use the CLI command reportapps to display App IDs.
+3)  The bat file in this repo must be renamed to match the Appliance Application ID, so if the appid is 1566877, then the bat file should be named appid.1566877.bat   
+You can use the Appliance CLI command reportapps to display App IDs.
 4)  The renamed bat file should be in c:\Program Files\Actifio\Scripts
 
 Effectively the order of events will be:
