@@ -10,10 +10,10 @@ You can use the Appliance CLI command reportapps to display App IDs.
 
 Effectively the order of events will be:
 
-1)  Actifio requests the Connector to run the init tasks
-2)  Actifio requests the Connector to run the freeze tasks
-3)  Actifio requests the Connector to run the thaw tasks
-4)  Actifio requests the Connector to run the fini tasks
+1)  Actifio Appliance requests the Appliance Connector to run the init tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
+2)  Actifio rAppliance equests the Appliance Connector to run the freeze tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
+3)  Actifio Appliance requests the Appliance Connector to run the thaw tasks in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
+4)  Actifio Appliance requests the Appliance Connector to run the fini tasks in in c:\Program Files\Actifio\Scripts\appid.xxxx.bat
 
 
 # Error handling
